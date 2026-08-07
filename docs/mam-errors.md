@@ -23,9 +23,8 @@ help you understand what those errors mean and how to fix them.
 
 ## 429 Last Change Too Recent
 
-**Cause**: MAM was updated within the last hour — either because your IP changed
-or because you set a new cookie — and MAM enforces a minimum one-hour interval
-between updates.
+**Cause**: MAM enforces an _account-wide_ one-hour interval between seedbox IP
+updates.
 
 **Fix**: You just have to wait it out, at most one hour. This is a policy of
 MAM. Mousehole will retry automatically. You do not need a new cookie or to

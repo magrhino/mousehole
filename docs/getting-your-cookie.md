@@ -14,9 +14,9 @@ to get yours.
 2. Create a session.
 
    **Already have a session from the last time you did this?** You _can_ reuse
-   it, but some settings are permanent and cannot be changed later. I recommend
-   to just delete the old one with the "Remove Session" button in the "Sessions"
-   section and create a new one.
+   it, but I recommend to just delete it with the "Remove Session" button and
+   create a new one. This way, you can be certain that you've correctly
+   configured the session and that the cookie generated is valid.
 
    In the "Create session" section at the bottom of the page, enter these
    values:
@@ -36,10 +36,12 @@ to get yours.
 
    ![Session Cookie Value](/docs/images/mam-cookie.png)
 
-   **Do not share this cookie with any other client (Prowlarr, Jackett, etc).**
-   MAM rotates the cookie value each API call, so any other client sharing this
-   cookie will be invalidated the moment Mousehole makes a request, and vice
-   versa.
+   Aside: You _should not_ share this cookie with other clients (Prowlarr,
+   Jackett, etc). MAM lets you create multiple sessions, so it comes for free
+   that you can have one for each client that you use, each with narrow scope
+   and a helpful label. Technically, you can share a cookie between clients if
+   they are on the same IP/ASN, but this creates an organizational coupling that
+   you don't need to carry.
 
 4. Back in Mousehole, paste the cookie into the text box and click the "Set"
    button.
